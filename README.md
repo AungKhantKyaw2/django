@@ -1,2 +1,2 @@
 # django
-project is in the library
+project is in the branch > library
