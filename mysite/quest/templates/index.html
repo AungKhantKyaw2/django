@@ -59,19 +59,18 @@
 <body>
     <div class="container">
         <h1>Question and Answer Test Page</h1>
-        <p>Enter your question that you want to know.</p>
+        <p>Enter your question and context that you want to know.</p>
         <form method="post" id="questionForm" action="">
             {% csrf_token %}
             <textarea name="input_text" id="inputText" placeholder="Enter your question here......."></textarea>
-            <textarea name="input_text" id="inputText" placeholder="Enter your Context here......."></textarea>
+            <textarea name="context_text" id="contextText" placeholder="Enter your context here......."></textarea>
             <button type="submit" class="btn">Generate</button>
         </form>
         {% if quest_ans %}
         <h2>Answer</h2>
-        <div id="outputAnswer" class="output"> {{quest_ans}}</div>
+        <div id="outputAnswer" class="output">{{ quest_ans }}</div>
         {% endif %}
     </div>
-
-    
 </body>
+
 </html>
