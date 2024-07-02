@@ -63,6 +63,7 @@
         <form method="post" id="questionForm" action="">
             {% csrf_token %}
             <textarea name="input_text" id="inputText" placeholder="Enter your question here......."></textarea>
+            <textarea name="input_text" id="inputText" placeholder="Enter your Context here......."></textarea>
             <button type="submit" class="btn">Generate</button>
         </form>
         {% if quest_ans %}
